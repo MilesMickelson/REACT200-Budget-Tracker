@@ -29,6 +29,7 @@ export default class IncomeEntries extends React.Component {
     const { description, amount, dispatch } = this.props;
     dispatch(addIncome(description, amount));
   }
+
   render() {
     const { description, amount, lineItems } = this.props;
     return (
